@@ -1,30 +1,56 @@
 <script>
 export default {
-  name: 'TopFooterComponent',
+  name: 'MenuComponent',
   data() {
     return {
-      iconPath: [
-        '../../img/footer-facebook.png',
-        '../../img/footer-periscope.png',
-        '../../img/footer-pinterest.png',
-        '../../img/footer-twitter.png',
-        '../../img/footer-youtube.png',
+      comics: [
+        'Characters',
+        'Comics',
+        'Movies',
+        'TV',
+        'Games',
+        'Collectibles',
+        'Videos',
+        'Fans',
+        'News',
       ],
+      shop: ['Shop DC', 'Shop DC Collectibles'],
+      dc: [
+        'Terms',
+        'Privacy policy',
+        'Ad Choises',
+        'Advertising',
+        'Jobs',
+        'Subscriptions',
+        'Talent Workshops',
+        'CPS Certificates',
+        'Ratings',
+        'Shop help',
+        'Contact US',
+      ],
+      sites: ['DC', 'MAD Magainze', 'DC Kids', 'DC Universe', 'DC Power Visa'],
     };
   },
 };
 </script>
 
 <template>
-  <div class="left-content"><button>Sign-up now</button></div>
-  <div class="righ-content">
-    <span>Follow us</span>
-    <ul>
-      <li v-for="(path, index) in iconPath">
-        <img :src="path" :alt="index" />
-      </li>
-    </ul>
-  </div>
+  <h2>DC Comics</h2>
+  <ul>
+    <li v-for="link in comics">{{ link }}</li>
+  </ul>
+  <h2>Shop</h2>
+  <ul>
+    <li v-for="link in shop">{{ link }}</li>
+  </ul>
+  <h2>DC</h2>
+  <ul>
+    <li v-for="link in dc">{{ link }}</li>
+  </ul>
+  <h2>Sites</h2>
+  <ul>
+    <li v-for="link in sites">{{ link }}</li>
+  </ul>
 </template>
 
 <style scoped></style>
