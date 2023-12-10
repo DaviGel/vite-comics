@@ -13,9 +13,22 @@ export default {
 
 <template>
   <header>
-    <LogoComponentVue />
-    <MenuComponent />
+    <div class="container">
+      <LogoComponentVue />
+      <MenuComponent />
+    </div>
   </header>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+header {
+  height: 117px;
+  line-height: 117px;
+  margin: 5px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+</style>

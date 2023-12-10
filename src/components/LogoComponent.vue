@@ -14,4 +14,8 @@ export default {
   <img :src="path" :alt="title" />
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+img {
+  border-bottom: 5px solid transparent;
+}
+</style>

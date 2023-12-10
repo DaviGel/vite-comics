@@ -18,4 +18,23 @@ export default {
   <FooterComponent />
 </template>
 
-<style scoped></style>
+<style>
+body {
+  font-family: 'Asap Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.t-upper {
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+}
+</style>

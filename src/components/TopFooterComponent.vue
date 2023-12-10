@@ -35,22 +35,58 @@ export default {
 </script>
 
 <template>
-  <h2>DC Comics</h2>
-  <ul>
-    <li v-for="link in comics">{{ link }}</li>
-  </ul>
-  <h2>Shop</h2>
-  <ul>
-    <li v-for="link in shop">{{ link }}</li>
-  </ul>
-  <h2>DC</h2>
-  <ul>
-    <li v-for="link in dc">{{ link }}</li>
-  </ul>
-  <h2>Sites</h2>
-  <ul>
-    <li v-for="link in sites">{{ link }}</li>
-  </ul>
+  <div class="top-footer">
+    <div class="container">
+      <ul>
+        <li class="t-upper"><h2>DC Comics</h2></li>
+        <li v-for="link in comics">
+          <a href="#">{{ link }}</a>
+        </li>
+        <li class="t-upper"><h2>Shop</h2></li>
+        <li v-for="link in shop">
+          <a href="#">{{ link }}</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="t-upper"><h2>DC</h2></li>
+        <li v-for="link in dc">
+          <a href="#">{{ link }}</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="t-upper"><h2>Sites</h2></li>
+        <li v-for="link in sites">
+          <a href="#">{{ link }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+.top-footer {
+  background-image: url('../../img/footer-bg.jpg');
+  .container {
+    background-image: url('../../img/dc-logo-bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 45px 0 60px 0;
+    display: flex;
+    gap: 30px;
+    ul {
+      li {
+        list-style: none;
+        color: #959595;
+        h2 {
+          color: #fff;
+          margin: 26px 0 22px 0;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+</style>
