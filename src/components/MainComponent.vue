@@ -112,6 +112,7 @@ export default {
 
 <template>
   <main>
+    <div class="jumbotron"></div>
     <div class="container">
       <CardComponent
         :cards="cards"
@@ -127,6 +128,11 @@ export default {
 
 <style scoped lang="scss">
 main {
+  .jumbotron {
+    height: 400px;
+    background-image: url('../../img/jumbotron.jpg');
+    background-position: top center;
+  }
   .azure-banner {
     background-color: #0282f9;
     height: 155px;
