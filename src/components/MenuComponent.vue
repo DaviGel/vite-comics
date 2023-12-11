@@ -21,11 +21,13 @@ export default {
 </script>
 
 <template>
-  <ul>
-    <li v-for="link in list" class="t-upper">
-      <a href="#">{{ link }}</a>
-    </li>
-  </ul>
+  <nav>
+    <ul>
+      <li v-for="link in list" class="t-upper">
+        <a href="#">{{ link }}</a>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style scoped lang="scss">
