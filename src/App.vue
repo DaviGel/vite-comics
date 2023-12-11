@@ -20,8 +20,7 @@ export default {
 
 <style>
 body {
-  font-family: 'Asap Condensed', sans-serif;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 img {
