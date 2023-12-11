@@ -59,6 +59,9 @@ ul {
     position: relative;
     top: -28px;
     left: -14px;
+    button {
+      cursor: default;
+    }
   }
 }
 </style>
